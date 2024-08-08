@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="405.0" prefWidth="344.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.zapoctovy.RegistrationController">
+    <stylesheets>
+        <URL value="@style.css" />
+    </stylesheets>
+    <children>
+      <AnchorPane prefHeight="72.0" prefWidth="344.0" style="-fx-background-color: #40A578;">
+         <children>
+              <Label layoutX="101.0" layoutY="22.0" text="Registration Form" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+        <Label layoutX="84.0" layoutY="96.0" text="Name" />
+        <Label layoutX="66.0" layoutY="143.0" text="Surname" />
+        <Label layoutX="63.0" layoutY="187.0" text="Username" />
+        <Label layoutX="64.0" layoutY="230.0" text="Password" />
+        <Label layoutX="50.0" layoutY="273.0" text="Date of Birth" />
+
+        <TextField fx:id="nameFieldR" layoutX="127.0" layoutY="92.0" promptText="Enter your name" />
+        <TextField fx:id="surnameFieldR" layoutX="127.0" layoutY="139.0" promptText="Enter your surname" />
+        <TextField fx:id="usernameFieldR" layoutX="127.0" layoutY="183.0" promptText="Enter your username" />
+        <PasswordField fx:id="passwordFieldR" layoutX="127.0" layoutY="226.0" promptText="Enter your password" />
+        <TextField fx:id="dobFieldR" layoutX="127.0" layoutY="269.0" promptText="YYYY-MM-DD" />
+        <Label fx:id="statusLabelR" layoutX="14.0" layoutY="372.0" prefHeight="18.0" prefWidth="290.0" />
+
+        <Button fx:id="registerButton" layoutX="217.0" layoutY="316.0" mnemonicParsing="false" onAction="#newUser" styleClass="button" text="Submit" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+.button {
+    -fx-background-color: green;
+    -fx-text-fill: white;
+}
+.search{
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-padding: 8px 16px;
+    -fx-border-radius: 4px;
+    -fx-font-size: 14px;
+}
+.logout{
+    -fx-background-color: red;
+    -fx-text-fill: white;
+    -fx-padding: 8px 16px;
+    -fx-border-radius: 4px;
+    -fx-font-size: 14px;
+}
+.login_label{
+
+}
