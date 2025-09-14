@@ -1,0 +1,36 @@
+import pygame
+
+SCREENWIDTH = 800.0
+SCREENHEIGHT = 600.0
+FPS = 30
+BLOCK_SIZE = 80.0
+OFFSET_LEFT_LIMIT = 0
+OFFSET_RIGHT_LIMIT = 900.0
+NUM_OF_BLOCKS = ((SCREENWIDTH + OFFSET_RIGHT_LIMIT) / BLOCK_SIZE)
+NUM_OF_CLOUDS = 70
+
+RED = (255, 0, 0)
+MARGIN = 10
+ANT_WIDTH = 50
+ANT_HEIGHT = 30
+HOUSE_WIDTH = 150
+HOUSE_HEIGHT = 200
+COIN_WIDTH = 50
+COIN_HEIGHT = 30
+padding = 5
+GENERATE_ENEMY_EVENT = pygame.USEREVENT + 1
+BUTTON_WIDTH = 200
+BUTTON_HEIGHT = 50
+FONT_SIZE = (SCREENHEIGHT * 0.02)
+LEN_ARRAY = 2
+COOLDOWN_SEC = 2  # cooldown pro nákup jednotky
+
+#barvy
+YELLOW = (238, 246, 10)
+BLACK = (0, 0, 0)
+# Procento pro margin
+margin_percent = 0.05  # 5%
+
+# Vypočítání marginu
+MARGIN_X = int(SCREENWIDTH * margin_percent)
+MARGIN_Y = int(SCREENHEIGHT * margin_percent)
