@@ -1,0 +1,627 @@
+/* ========================================
+   IMPORTS
+======================================== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+/* ========================================
+   BASE STYLES
+======================================== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    color: #0b0b15;
+}
+
+h1 {
+    font-size: 6em;
+    width: 30em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+p,
+a,
+span {
+    color: #555555;
+    font-weight: 500;
+    line-height: 1.5em;
+    font-style: normal;
+    text-decoration: none;
+}
+
+span {
+    display: block;
+}
+
+.little {
+    font-size: 0.9em;
+    color: #555555;
+}
+
+.name {
+    color: #ff9301;
+    font-weight: 900;
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ========================================
+   BUTTONS
+======================================== */
+.mode_button {
+    color: white;
+    background-color: #121212;
+    border: none;
+    width: 30%;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.send {
+    padding: 1em;
+    background-color: #ff9301;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    width: 10em;
+}
+
+/* ========================================
+   LAYOUT UTILITIES
+======================================== */
+.grid {
+    display: grid;
+}
+
+.flex {
+    display: flex;
+    max-width: 1140px;
+    margin: auto;
+}
+
+.flex--awards,
+.flex--what_i_do {
+    flex-wrap: wrap;
+}
+
+/* ========================================
+   FONT STYLES
+======================================== */
+.font_style_1 {
+    color: black;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.font_style_2 {
+    color: #ff9301;
+}
+
+.font_style_3 {
+    color: #ff9301;
+    font-weight: 900;
+    width: 30em;
+}
+
+.menu__welcome {
+    color: #0b0b15;
+    margin-top: 3em;
+    font-weight: 400;
+}
+
+/* ========================================
+   SECTIONS & TITLES
+======================================== */
+.title {
+    box-sizing: border-box;
+    margin: auto;
+    width: 100%;
+    padding: 1rem;
+    grid-column: 1 / -1;
+}
+
+/* ========================================
+   MENU
+======================================== */
+.menu__text {
+    width: 30em;
+}
+
+.menu__item,
+.email {
+    grid-column: 1;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+    gap: 2em;
+    max-width: 1140px;
+    margin: auto;
+}
+
+nav {
+    padding: 0;
+    height: 3em;
+    width: 40em;
+}
+
+ul {
+    padding: 0;
+}
+
+li:hover {
+    border-bottom: 2px solid #ff9301;
+}
+
+/* ========================================
+   HERO SECTION
+======================================== */
+.jane_doe {
+    margin-bottom: 0;
+}
+
+.jane_doe::before {
+    content: "";
+    position: absolute;
+    top: -30%;
+    width: 1000px;
+    height: 800px;
+    background-color: #ff9301;
+    opacity: 0.5;
+    border-radius: 50%;
+    z-index: -3;
+    padding: 0;
+}
+
+.jane_doe__image {
+    width: 24em;
+    display: flex;
+    padding-left: 5em;
+    background-size: cover;
+}
+
+/* ========================================
+   BIOGRAPHY
+======================================== */
+.grid--biography {
+    display: grid;
+    padding: 4em;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    justify-items: center;
+    gap: 2rem;
+    background-color: white;
+}
+
+.biography__figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.biography__figure img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #ff9301;
+    margin-bottom: 1em;
+}
+
+/* ========================================
+   BORDER
+======================================== */
+.border_dark {
+    width: 1140px;
+    height: 20px;
+    margin: auto;
+    background-image: url("border-dark.png");
+    background-repeat: repeat-x;
+    background-size: 15%;
+}
+
+/* ========================================
+   WHAT I DO
+======================================== */
+.card {
+    background-color: white;
+    margin: 1em;
+    text-align: center;
+}
+
+.card--what_i_do {
+    position: relative;
+    z-index: 3;
+    border-radius: 20px;
+}
+
+.whatido__text {
+    padding: 2em;
+    text-align: left;
+    color: black;
+}
+
+.whatido__circle {
+    position: relative;
+    border-radius: 15% 0 0 0;
+    background-color: #ff9301;
+    z-index: -1;
+    height: 140px;
+    width: 200px;
+    padding-left: 3em;
+    padding-top: 1em;
+    margin: 0;
+    clip-path: circle(150px at 35% 0);
+    text-align: left;
+}
+
+.fa-pencil-alt,
+.fa-desktop,
+.fa-bullseye {
+    width: 6em;
+    height: 6em;
+    top: 5%;
+    left: 10%;
+}
+
+/* ========================================
+   PORTFOLIO & AWARDS
+======================================== */
+.myportfolio,
+.whatido,
+.awards {
+    margin: auto;
+}
+
+.grid--my_portfolio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    max-width: 1140px;
+    margin: auto;
+}
+
+.portfolio_image {
+    width: 350px;
+    height: 200px;
+}
+
+.card--awards {
+    border-radius: 20px;
+    flex: auto;
+    padding: 1em;
+}
+
+.fa-trophy {
+    width: 50px;
+    height: 50px;
+}
+
+/* ========================================
+   EXPERIENCE
+======================================== */
+.flex--experience {
+    flex-direction: column;
+    margin-top: 2em;
+}
+
+.experience__item {
+    display: flex;
+    gap: 5em;
+    justify-content: center;
+    align-self: center;
+    padding: 3em;
+    margin: 1em;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.experience__text {
+    padding-left: 2em;
+    border-left: 2px solid #eeeeee;
+}
+
+.experience__span {
+    color: white;
+    padding: 0.4em;
+    width: 70px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.experience__span--full_time {
+    background-color: #ff9301;
+}
+
+.experience__span--part_time {
+    background-color: #555555;
+}
+
+/* ========================================
+   CONTACT
+======================================== */
+.grid--contact {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 2em;
+    width: 100%;
+    background-color: white;
+    padding: 2em 2em 0 2em;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: start;
+}
+
+.email__flex {
+    display: flex;
+    margin: auto;
+    flex-wrap: nowrap;
+}
+
+.message {
+    grid-column: 2;
+}
+
+input,
+textarea {
+    padding: 1em;
+    border: 1px solid #bbbbbb;
+}
+
+.input__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    max-width: 600px;
+    margin: auto;
+}
+
+.input__subject,
+.input__textarea,
+.input__grid h3 {
+    grid-column: 1 / 2 span;
+}
+
+iframe {
+    grid-column: 1 / 2 span;
+    height: 300px;
+    width: 100%;
+    -webkit-filter: grayscale(100%);
+}
+
+/* MENŠÍ IKONY V CONTACT */
+.fa-map-marker-alt,
+.fa-envelope,
+.fa-mobile-alt {
+    width: 20px;
+    height: 20px;
+    padding: 0.5em;
+}
+
+/* ========================================
+   FOOTER
+======================================== */
+.end {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1140px;
+    margin: auto;
+    border-top: 2px solid #eeeeee;
+}
+
+.fa-facebook-square,
+.fa-twitter-square {
+    width: 2em;
+    margin: 0.5em;
+}
+
+.end__text {
+    text-align: right;
+}
+
+/* ========================================
+   MEDIA QUERIES
+======================================== */
+
+/* Medium screens */
+@media screen and (max-width: 959px) and (min-width: 560px) {
+    .flex--what_i_do {
+        flex-direction: column;
+    }
+
+    .menu {
+        padding: 2em;
+    }
+
+    .jane_doe {
+        display: none;
+    }
+
+    .grid--biography {
+        grid-template-columns: 1fr;
+        padding: 0;
+        margin: 1em;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .grid--my_portfolio {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 2em;
+    }
+
+    .flex--awards {
+        flex-wrap: nowrap;
+    }
+
+    .grid--contact {
+        grid-template-columns: 1fr;
+    }
+
+    .message {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .card--awards {
+        height: 10em;
+    }
+
+    .email {
+        margin: 20px;
+    }
+
+    .input__grid {
+        max-width: 800px;
+        margin: 20px;
+    }
+
+    .card--what_i_do {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+/* Small screens */
+@media screen and (max-width: 559px) and (min-width: 360px) {
+    .grid--biography {
+        grid-template-columns: 1fr;
+        padding: 0;
+        margin: 1em;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .grid--my_portfolio {
+        grid-template-columns: 1fr;
+        padding: 2em;
+        margin: auto;
+    }
+
+    .grid--contact {
+        grid-template-columns: 1fr;
+    }
+
+    .flex--what_i_do,
+    .flex--awards {
+        flex-direction: column;
+    }
+
+    .menu {
+        max-width: none;
+        padding: 1em;
+    }
+
+    .jane_doe {
+        display: none;
+    }
+
+    nav {
+        height: 10em;
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(3, 0.1fr);
+        margin: 0;
+    }
+
+    li {
+        background-color: #ff9301;
+        padding: 1em;
+        margin: 0.5em;
+        width: 7em;
+        border-radius: 0.3em;
+    }
+
+    li:hover {
+        border-bottom: none;
+    }
+
+    .awards__icons {
+        display: flex;
+        justify-content: left;
+        gap: 1em;
+    }
+
+    .awards__icons span {
+        padding: 1em;
+    }
+
+    .experience__item {
+        flex-direction: column;
+        gap: 2em;
+        padding: 0;
+    }
+
+    .experience__text {
+        padding-left: 0;
+        border-left: none;
+    }
+
+    .email {
+        margin: 20px;
+        width: 400px;
+    }
+
+    .message {
+        grid-column: 1;
+    }
+
+    .input__grid {
+        grid-template-columns: 1fr;
+        margin: 20px;
+    }
+
+    .input__email {
+        grid-row: 3;
+    }
+
+    jane_doe,
+    .input__subject,
+    .input__textarea {
+        grid-column: 1;
+    }
+
+    .send {
+        grid-column: 1;
+    }
+
+    .end {
+        grid-template-columns: 1fr;
+        max-width: 1140px;
+        margin: auto;
+    }
+
+    .end__text,
+    .icons {
+        text-align: center;
+    }
+}

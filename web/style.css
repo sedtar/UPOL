@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+body {
+    overflow-x: hidden;
+}
+
+.grid {
+    display: grid;
+    max-width: 1140px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    max-width: 1140px;
+    margin: auto;
+}
+
+/**Background color**/
+
+.background__first {
+    background-color: #f7f7ff;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 10px;
+}
+
+/**Font styles**/
+
+.font_style_1 {
+    color: black;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.font_style_2 {
+    color: #ff9301;
+}
+
+.font_style_3 {
+    color: #ff9301;
+    font-weight: 900;
+    width: 30em;
+}
+
+.menu__welcome {
+    color: #0b0b15;
+    margin-top: 3em;
+    font-weight: 400;
+}
+
+/**Sections title**/
+
+.title {
+    box-sizing: border-box;
+    margin: auto;
+    width: 100%;
+    padding: 1rem;
+}
+
+/**Menu**/
+
+.menu__text {
+    width: 30em;
+}
+
+.menu__item,
+.email {
+    grid-column: 1;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+    gap: 2em;
+    max-width: 1140px;
+    margin: auto;
+}
+
+nav {
+    padding: 0;
+    height: 3em;
+    width: 40em;
+}
+
+ul {
+    padding: 0;
+}
+
+li:hover {
+    border-bottom: 2px solid #ff9301;
+}
+
+.jane_doe {
+    margin-bottom: 0;
+}
+
+.jane_doe::before {
+    background-color: #ff9301;
+    opacity: 0.5;
+    border-radius: 50%;
+    width: 1000px;
+    height: 800px;
+    top: -30%;
+    position: absolute;
+    content: "";
+    z-index: -3;
+    padding: 0;
+}
+
+.jane_doe__image {
+    width: 24em;
+    display: flex;
+    padding-left: 5em;
+    background-size: cover;
+}
+
+/**Biography**/
+
+.grid--biography {
+    padding: 4em;
+    grid-template-columns: 1fr 3fr;
+    gap: 2em;
+}
+
+.biography__figure {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.biography__figure::before {
+    background-image: url("avatar4.png");
+    background-color: #ff9301;
+    display: flex;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    content: "";
+    z-index: -1;
+}
+
+
+/**Border dark**/
+
+.border_dark {
+    width: 1140px;
+    height: 20px;
+    margin: auto;
+    background-image: url("border-dark.png");
+    background-repeat: repeat-x;
+    background-size: 15%;
+}
+
+/**What I do**/
+.card {
+    background-color: white;
+    margin: 1em;
+    text-align: center;
+}
+
+.card--what_i_do {
+    z-index: 3;
+    border-radius: 20px;
+    position: relative;
+}
+
+.whatido__text {
+    padding: 2em;
+    text-align: left;
+}
+
+.whatido__circle {
+    position: relative;
+    border-radius: 15% 0 0 0;
+    background-color: #ff9301;
+    z-index: -1;
+    height: 140px;
+    width: 200px;
+    text-align: left;
+    padding-left: 3em;
+    padding-top: 1em;
+    margin: 0;
+    clip-path: circle(150px at 35% 0);
+}
+
+.fa-pencil-alt,
+.fa-desktop,
+.fa-bullseye {
+    width: 6em;
+    height: 6em;
+    top: 5%;
+    left: 10%;
+}
+
+/***Awards***/
+
+.flex--awards {
+    flex-wrap: wrap;
+}
+
+/**My portfolio***/
+.myportfolio,
+.whatido,
+.awards {
+    max-width: 1140px;
+    margin: auto;
+    margin-top: 2em;
+}
+
+.grid--my_portfolio {
+    gap: 2em;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 3em;
+}
+
+.portfolio_image {
+    width: 350px;
+    height: 200px;
+}
+
+.fa-trophy {
+    width: 50px;
+    height: 50px;
+}
+
+.card--awards {
+    border-radius: 20px;
+    flex: auto;
+    padding: 1em;
+}
+
+/**Experience**/
+.flex--experience {
+    flex-direction: column;
+    margin-top: 2em;
+}
+
+.experience__item {
+    padding: 3em;
+    align-self: center;
+    margin: 1em;
+    border-radius: 20px;
+    display: flex;
+    gap: 5em;
+    justify-content: center;
+    background-color: #f7f7ff;
+}
+
+.experience__text {
+    padding-left: 2em;
+    border-left: 2px solid #eeeeee;
+}
+
+.experience__span {
+    color: white;
+    padding: 0.4em;
+    width: 70px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.experience__span--full_time {
+    background-color: #ff9301;
+}
+
+.experience__span--part_time {
+    background-color: #555555;
+}
+
+/**Concact***/
+.footer__title {
+    max-width: 1140px;
+    margin: auto;
+    padding: 1em;
+}
+
+.email__flex {
+    display: flex;
+    margin: auto;
+    flex-wrap: nowrap;
+}
+
+.grid--contact {
+    grid-template-columns: 2fr 3fr;
+    gap: 2em;
+    margin: auto;
+}
+
+address {
+    font-style: normal;
+    font-weight: 900;
+    color: black;
+    padding: 0.5em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.fa-map-marker-alt,
+.fa-envelope,
+.fa-mobile-alt {
+    width: 30px;
+    height: 30px;
+    padding: 0.5em;
+}
+
+.message {
+    grid-column: 2;
+}
+
+/**Contact form**/
+
+input,
+textarea {
+    padding: 1em;
+    border: 1px solid #bbbbbb;
+}
+
+.input__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    max-width: 600px;
+    margin: auto;
+}
+
+.input__subject,
+.input__textarea,
+.input__grid h3 {
+    grid-column: 1 / 2 span;
+}
+
+iframe {
+    grid-column: 1/ 2 span;
+    height: 300px;
+    width: 100%;
+    -webkit-filter: grayscale(100%);
+}
+
+.send {
+    padding: 1em;
+    background-color: #0b0b15;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    width: 10em;
+}
+
+.end {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1140px;
+    margin: auto;
+    border-top: 2px solid #eeeeee;
+}
+
+.fa-facebook-square,
+.fa-twitter-square {
+    width: 3em;
+    margin: 0.5em;
+}
+
+.end__text {
+    text-align: right;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #0b0b15;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 6em;
+    width: 30em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+p,
+a,
+span {
+    color: #555555;
+    font-weight: 500;
+    line-height: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    text-decoration: none;
+}
+
+span {
+    display: block;
+}
+
+.little {
+    font-size: 0.9em;
+    color: #555555;
+}
+
+.name {
+    color: #ff9301;
+    font-weight: 900;
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+/**Cicle h2**/
+
+section>h2::before {
+    background-color: #ff9301;
+    opacity: 0.5;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    content: "";
+    z-index: -1;
+}
+
+@media screen and (max-width:959px) and (min-width:560px) {
+
+    .flex--what_i_do {
+        flex-direction: column;
+    }
+
+    .menu {
+        padding: 2em;
+    }
+
+    .jane_doe {
+        display: none;
+    }
+
+    .grid--biography {
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+        padding: 0;
+        margin: 1em;
+    }
+
+    .grid--my_portfolio {
+        grid-template-columns: 1fr 1fr;
+        padding: 2em;
+    }
+
+    .flex--awards {
+        flex-wrap: nowrap;
+    }
+
+    .grid--contact {
+        grid-template-columns: 1fr;
+    }
+
+    .message {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .card--awards {
+        height: 10em;
+    }
+
+    .email {
+        margin: 20px;
+    }
+
+    .input__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 800px;
+        margin: 20px;
+    }
+
+    .card--what_i_do {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:559px) and (min-width:360px) {
+    .grid--biography {
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+        margin: 1em;
+        padding: 0;
+    }
+
+    .grid--my_portfolio {
+        grid-template-columns: 1fr;
+        padding: 2em;
+        margin: auto;
+    }
+
+    .grid--contact {
+        grid-template-columns: 1fr;
+    }
+
+    .flex--what_i_do {
+        flex-direction: column;
+    }
+
+    .flex--awards {
+        flex-direction: column;
+    }
+
+    .menu {
+        max-width: none;
+        padding: 1em;
+    }
+
+    .jane_doe {
+        display: none;
+    }
+
+    nav {
+        height: 10em;
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(3, 0.1fr);
+        margin: none;
+    }
+
+    li {
+        background-color: #ff9301;
+        padding: 1em;
+        margin: 0.5em;
+        width: 7em;
+        border-radius: 0.3em;
+    }
+
+    li:hover {
+        border-bottom: none;
+    }
+
+    .awards__icons {
+        display: flex;
+        justify-content: left;
+        gap: 1em;
+    }
+
+    .awards__icons span {
+        padding: 1em;
+    }
+
+    .experience__item {
+        flex-direction: column;
+        padding: 20px;
+        gap: 2em;
+        padding: none;
+    }
+
+    .experience__text {
+        padding-left: 0;
+        border-left: none;
+    }
+
+    .email {
+        margin: 20px;
+        width: 400px;
+    }
+
+    .message {
+        grid-column: 1;
+    }
+
+    .input__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        margin: 20px;
+    }
+
+    .input__email {
+        grid-row: 3;
+    }
+
+    jane_doe,
+    .input__subject,
+    .input__textarea {
+        grid-column: 1;
+    }
+
+    .send {
+        grid-column: 1;
+    }
+
+    .end {
+        grid-template-columns: 1fr;
+        max-width: 1140px;
+        margin: auto;
+    }
+
+    .end__text,
+    .icons {
+        text-align: center;
+    }
+}
